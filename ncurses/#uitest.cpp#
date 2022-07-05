@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <ncurses.h>
+
+int main () {
+  initscr();
+  keypad(stdscr, TRUE); //enable function keys, arrows, etc.
+  refresh();
+
+  endwin();
+  
+  return 0;
+
+}
